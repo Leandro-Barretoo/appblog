@@ -1,24 +1,71 @@
-# README
+## Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple blog website that let's users create posts, like post and comment on them.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- PostgreSQL
 
-* System dependencies
+## Frameworks
 
-* Configuration
+- Ruby on Rails
 
-* Database creation
+## Getting Started
 
-* Database initialization
+# Prerequisites
 
-* How to run the test suite
+- Ruby
+- Rails
 
-* Services (job queues, cache servers, search engines, etc.)
+# Setup
 
-* Deployment instructions
+- Make sure you have all the prerequisites installed properly in your computer
+- Clone the directory using `git clone git@github.com:Leandro-Barretoo/blogapp.git`
+- Navigate to project directory with `cd blogapp`
+- Run `bundle install`
 
-* ...
+# Database setup
+
+- Create a user:
+```sh
+sudo -u postgres createuser <user> -s
+```
+
+- Create the database:
+```sh
+rake db:create
+```
+
+
+# To run the program
+
+```sh
+rails s
+```
+
+## Author
+
+
+👤 **Leandro**
+
+- GitHub: [Leandro-Barretoo](https://github.com/Leandro-Barretoo)
+- LinkedIn: [Leandro Barreto](https://linkedin.com/in/leandroobarreto/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## License
+
+[MIT](./LICENSE)
