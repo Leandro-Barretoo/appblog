@@ -44,6 +44,13 @@ rake db:create
 rails s
 ```
 
+# Tests
+
+- To run the tests run:
+```sh
+rspec spec
+```
+
 ## Author
 
 
