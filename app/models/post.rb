@@ -8,6 +8,6 @@ class Post < ApplicationRecord
     end
 
     def last_five(value = 5)
-        comments.last value
+        comments.last(value)
     end
 end
