@@ -1,44 +1,9 @@
-<div class="wrapper">
+<% @users.each do | user | %>
     <div class="user-list">
-        <div class="image">image</div>
+        <div class="image" style="background-image: url(<%= user.photo %>); background-repeat: no-repeat; background-position: center; background-size: 200px auto;"></div>
         <div class="user-info">
-            <div class="user-name">User name</div>
-            <div class="user-num-posts">Number of posts: x</div>
+            <div class="user-name"><%= user.name %></div>
+            <div class="user-num-posts">Number of posts: <%= user.postCounter %></div>
         </div>
     </div>
-    <div class="user-list">
-        <div class="image">image</div>
-        <div class="user-info">
-            <div class="user-name">User name</div>
-            <div class="user-num-posts">Number of posts: x</div>
-        </div>
-    </div>
-    <div class="user-list">
-        <div class="image">image</div>
-        <div class="user-info">
-            <div class="user-name">User name</div>
-            <div class="user-num-posts">Number of posts: x</div>
-        </div>
-    </div>
-    <div class="user-list">
-        <div class="image">image</div>
-        <div class="user-info">
-            <div class="user-name">User name</div>
-            <div class="user-num-posts">Number of posts: x</div>
-        </div>
-    </div>
-    <div class="user-list">
-        <div class="image">image</div>
-        <div class="user-info">
-            <div class="user-name">User name</div>
-            <div class="user-num-posts">Number of posts: x</div>
-        </div>
-    </div>
-    <div class="user-list">
-        <div class="image">image</div>
-        <div class="user-info">
-            <div class="user-name">User name</div>
-            <div class="user-num-posts">Number of posts: x</div>
-        </div>
-    </div>
-</div>
+<% end %>
