@@ -1,48 +1,48 @@
 .wrapper a:link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .wrapper a:visited {
-    color: black;
+  color: black;
 }
 
 .user-list {
-    width: 50%;
-    margin: 50px auto;
-    display: flex;
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
 }
 
 .image {
-    background-color: teal;
-    color: #fff;
-    margin: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px 2px grey;
+  background-color: teal;
+  color: #fff;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2px grey;
 }
 
 .user-info {
-    border-radius: 20px;
-    flex: 1;
-    margin: 20px 0;
-    margin-left: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background-color: lightgrey;
-    box-shadow: 0 0 5px 2px grey;
+  border-radius: 20px;
+  flex: 1;
+  margin: 20px 0;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: lightgrey;
+  box-shadow: 0 0 5px 2px grey;
 }
 
 .user-name {
-    font-size: 25px;
-    font-weight: 600;
-    padding-left: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 30px;
 }
 
 .user-num-posts {
-    padding-top: 40px;
-    padding-right: 30px;
+  padding-top: 40px;
+  padding-right: 30px;
 }
