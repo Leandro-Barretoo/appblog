@@ -1,49 +1,47 @@
 .show-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    border: 1px solid red;
 }
 
 .info-user {
-    flex: 0.6;
-    margin: 10px;
+    width: 70%;
+    margin: 30px auto;
     display: flex;
-    margin-bottom: 20px;
 }
 
 .img {
-    flex: 0.25;
     background-color: teal;
-    margin-left: 60px;
     color: #fff;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 20px;
 }
 
 .user-name-posts {
-    margin-left: 50px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    flex: 4;
+    flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
+.user-show-name {
+    margin-left: 50px;
+    font-size: 29px;
+    font-weight: 600; 
+}
+
 .user-post {
-    padding-top: 40px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .bio {
-    border: 3px solid grey;
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #eaeaea;
     border-radius: 20px;
-    flex: 1;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
 }
 
 .bio-tag {
@@ -53,25 +51,24 @@
 
 .bio-text {
     margin-top: 20px;
-    flex: 2;
 }
 
 .posts {
-    flex: 3;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: #eaeaea;
 }
 
 .post {
-    flex: 1;
-    border: 3px solid grey;
-    margin: 20px;
+    background-color: #fff;
+    margin: 30px;
     border-radius: 10px;
+    padding: 27px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .post-num {
@@ -79,16 +76,17 @@
     font-weight: 600;
 }
 
+.post-text {
+    margin: 20px 0;
+}
+
 .post-stat {
     align-self: flex-end;
 }
 
 .button {
-    flex: 0.3;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: max-content;
+    margin: 30px auto;
 }
 
 .see-all-btn {

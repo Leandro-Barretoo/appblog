@@ -19,4 +19,6 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: lightcyan;
+    box-sizing: border-box;
 }
