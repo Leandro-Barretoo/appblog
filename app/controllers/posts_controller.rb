@@ -1,5 +1,10 @@
 class PostsController < ApplicationController
-  def index; end
+  def index
+    @user = User.find_by_id(params[:user_id])
+    @posts = Post.all.where('author_id = ?', params[:user_id]).order(created_at: :desc)
+  end
 
-  def show; end
+  def show
+    @post = Post.find_by_id(params[:id])
+  end
 end

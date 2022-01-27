@@ -1,1 +1,16 @@
-<h1>Here is the information of a single post id</h1>
+<div class="container">
+    <div>
+        <div class="stats">
+            <div class="title"><%= @post.title %></div>
+            <div>Comments: <%= @post.commentsCounter %>, Likes: <%= @post.likesCounter %></div>
+        </div>
+        <div><%= @post.text %></div>
+    </div>
+    <div class="separator"></div>
+    <div>
+        <% @post.comments.each do |comment| %>
+            <% @comment_author = User.find_by_id(comment.author_id) %>
+            <div class="comment"><%= @comment_author.name %>: <%= comment.text %></div>
+        <% end %>
+    </div>
+</div>
