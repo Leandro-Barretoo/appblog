@@ -1,0 +1,101 @@
+.show-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.info-user {
+    flex: 0.6;
+    margin: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.img {
+    flex: 0.25;
+    background-color: teal;
+    margin-left: 60px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-name-posts {
+    margin-left: 50px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-post {
+    padding-top: 40px;
+}
+
+.bio {
+    border: 3px solid grey;
+    border-radius: 20px;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bio-tag {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.bio-text {
+    margin-top: 20px;
+    flex: 2;
+}
+
+.posts {
+    flex: 3;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    flex: 1;
+    border: 3px solid grey;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.post-num {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.post-stat {
+    align-self: flex-end;
+}
+
+.button {
+    flex: 0.3;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.see-all-btn {
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border-radius: 7px;
+}
