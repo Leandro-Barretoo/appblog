@@ -1,18 +1,22 @@
 <%= render "layouts/info-user" %>
-<% @posts.each do |post| %>
-    <div class="post">
-        <div class="post-num"><%= post.title %></div>
-        <div class="post-text"><%= post.text %></div>
-        <div class="post-stat">Comments: <%= post.commentsCounter %>, Likes: <%= post.likesCounter %></div>
-        <div class="separator"></div>
-        <div class="comments-info">
-            <% post.comments.each do |comment| %>
-                <% @comment_author = User.find_by_id(comment.author_id) %>
-                <div class="comment"><%= @comment_author.name %>: <%= comment.text %></div>
-            <% end %>
-        </div>
-    </div>
-<% end %>
+<div class="wrapper">
+    <% @posts.each do |post| %>
+        <%= link_to user_post_path(post.author_id, post) do %>
+            <div class="post">
+                <div class="post-num"><%= post.title %></div>
+                <div class="post-text"><%= post.text %></div>
+                <div class="post-stat">Comments: <%= post.commentsCounter %>, Likes: <%= post.likesCounter %></div>
+                <div class="separator"></div>
+                <div class="comments-info">
+                    <% post.comments.each do |comment| %>
+                        <% @comment_author = User.find_by_id(comment.author_id) %>
+                        <div class="comment"><%= @comment_author.name %>: <%= comment.text %></div>
+                    <% end %>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
+</div>
 <div class="button">
     <button class="see-all-btn">Pagination</button>
-</div> 
+</div>

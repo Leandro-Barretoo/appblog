@@ -1,5 +1,6 @@
 .wrapper a:link {
     text-decoration: none;
+    color: black;
 }
 
 .wrapper a:visited {
