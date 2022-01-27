@@ -8,7 +8,7 @@
                 <div class="post-stat">Comments: <%= post.commentsCounter %>, Likes: <%= post.likesCounter %></div>
                 <div class="separator"></div>
                 <div class="comments-info">
-                    <% post.comments.each do |comment| %>
+                    <% post.comments.last(3).each do |comment| %>
                         <% @comment_author = User.find_by_id(comment.author_id) %>
                         <div class="comment"><%= @comment_author.name %>: <%= comment.text %></div>
                     <% end %>

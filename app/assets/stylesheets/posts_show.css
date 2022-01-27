@@ -1,0 +1,20 @@
+.container {
+    width: 70%;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px grey;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 600;
+}

@@ -4,5 +4,7 @@ class PostsController < ApplicationController
     @posts = Post.all.where("author_id = ?", params[:user_id]).order(created_at: :desc)
   end
 
-  def show; end
+  def show
+    @post = Post.find_by_id(params[:id])
+  end
 end
