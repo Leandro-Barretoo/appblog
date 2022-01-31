@@ -1,1 +1,13 @@
-<h1>Here is a list of all users</h1>
+<div class="wrapper">
+    <% @users.each do | user | %>
+        <%= link_to user do %>
+            <div class="user-list">
+                <div class="image" style="background-image: url(<%= user.photo %>); background-repeat: no-repeat; background-position: center; background-size: 200px auto;"></div>
+                <div class="user-info">
+                    <div class="user-name"><%= user.name %></div>
+                    <div class="user-num-posts">Number of posts: <%= user.postCounter %></div>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
+</div>
