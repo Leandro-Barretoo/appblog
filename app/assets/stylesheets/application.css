@@ -14,12 +14,11 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
- body {
-   margin: 0;
-   font-family: 'Poppins', sans-serif;
-   background-color: lightcyan;
-   box-sizing: border-box;
- }
- 
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: lightcyan;
+  box-sizing: border-box;
+}
