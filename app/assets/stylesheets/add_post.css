@@ -1,104 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 .add-btn-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 40px;
-    padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+  padding-right: 40px;
 }
 
 .add-post-btn {
-    padding: 20px;
-    font-size: 15px;
-    border: none;
-    background-color: lightgreen;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 2px grey;
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  background-color: lightgreen;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px grey;
 }
 
 .btn-txt {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .form-wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
-    background-color: #fff;
-    box-shadow: 0 0 5px 2px grey;
-    border-radius: 20px;
-    width: 40%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'DM Sans', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 20px;
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .form-container form {
-    background-color: wheat;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  background-color: wheat;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .form-header {
-    margin: 20px;
-    padding-left: 10px;
+  margin: 20px;
+  padding-left: 10px;
 }
 
 .form-title {
-    padding: 10px;
-    font-size: 20px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .form-title label {
-    font-size: 25px;
-    display: block;
-    margin-bottom: 10px;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form-title input {
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 95%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 95%;
 }
 
 .form-text {
-    padding: 10px;
+  padding: 10px;
 }
 
 .form-text label {
-    font-size: 25px;
-    display: block;
-    margin-bottom: 10px;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form-text textarea {
-    border: none;
-    resize: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 95%;
+  border: none;
+  resize: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 95%;
 }
 
 .form-submit {
-    align-self: flex-end;
-    margin-right: 30px;
+  align-self: flex-end;
+  margin-right: 30px;
 }
 
 .form-submit input {
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 2px grey;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px grey;
 }

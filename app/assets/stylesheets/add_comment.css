@@ -1,46 +1,46 @@
 .comment-btn-container {
-    margin: 20px 20px 10px 20px;
-    display: flex;
-    flex-direction: column;
+  margin: 20px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .comment-btn {
-    align-self: flex-end;
-    padding: 10px;
-    border: none;
-    box-shadow: 0 0 5px 2px grey;
+  align-self: flex-end;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 5px 2px grey;
 }
 
 .comment-form-container {
-    width: 70%;
-    height: 30%;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px 2px grey;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  width: 70%;
+  height: 30%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 2px grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .comment-form-container form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: wheat;
-    padding: 20px;
-    border-radius: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .submit {
-    align-self: flex-end;
-    padding-right: 55px;
+  align-self: flex-end;
+  padding-right: 55px;
 }
 
 .submit input {
-    padding: 5px 20px;
-    font-size: 17px;
-    border: none;
-    box-shadow: 0 0 5px 2px grey;
-    border-radius: 10px;
+  padding: 5px 20px;
+  font-size: 17px;
+  border: none;
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 10px;
 }
