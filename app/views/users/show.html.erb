@@ -1,21 +1,20 @@
-<div class="show-wrapper">
-    <%= render "layouts/info-user" %>
-    <div class="bio">
-        <div class="bio-tag">Bio</div>
-        <div class="bio-text"><%= @user.bio %></div>
-    </div>
-    <div class="posts">
-        <% @posts.each do | post | %>
-            <div class="post">
-                <div class="post-num"><%= post.title %></div>
-                <div class="post-text"><%= post.text %></div>
-                <div class="post-stat">Comments: <%= post.commentsCounter %>, Likes: <%= post.likesCounter %></div>
-            </div>
-        <% end %>
-    </div>
-    <div class="button">
-        <%= link_to user_posts_path(@user) do %>
-            <button class="see-all-btn">See all posts</button>
-        <% end %>
-    </div>
+<%= render "layouts/add-post-btn" %>
+<%= render "layouts/info-user" %>
+<div class="bio">
+    <div class="bio-tag">Bio</div>
+    <div class="bio-text"><%= @user.bio %></div>
+</div>
+<div class="posts">
+    <% @posts.each do | post | %>
+        <div class="post">
+            <div class="post-num"><%= post.title %></div>
+            <div class="post-text"><%= post.text %></div>
+            <div class="post-stat">Comments: <%= post.commentsCounter %>, Likes: <%= post.likesCounter %></div>
+        </div>
+    <% end %>
+</div>
+<div class="button">
+    <%= link_to user_posts_path(@user) do %>
+        <button class="see-all-btn">See all posts</button>
+    <% end %>
 </div>

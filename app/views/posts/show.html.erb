@@ -1,3 +1,4 @@
+<%= render "layouts/add-post-btn" %>
 <div class="container">
     <div>
         <div class="stats">
@@ -11,6 +12,12 @@
         <% @post.comments.each do |comment| %>
             <% @comment_author = User.find_by_id(comment.author_id) %>
             <div class="comment"><%= @comment_author.name %>: <%= comment.text %></div>
+        <% end %>
+    </div>
+    <%= render "layouts/add-comment-btn" %>
+    <div class="like-container">
+        <%= button_to user_post_likes_path(@user, @post) do %>
+            <i class="far fa-heart"></i>
         <% end %>
     </div>
 </div>
