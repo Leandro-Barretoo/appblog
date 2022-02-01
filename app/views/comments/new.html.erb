@@ -1,0 +1,14 @@
+<div class="form-wrapper">
+    <div class="comment-form-container">
+        <h1 class="form-header">Add new comment</h1>
+        <%= form_with url: user_post_comments_path do |form| %>
+            <div class="form-text">
+                <%= form.label :text %>
+                <%= form.text_area :text %>
+            </div>
+            <div class="submit">
+                <%= form.submit %>
+            </div>
+        <% end %>
+    </div>
+</div>
