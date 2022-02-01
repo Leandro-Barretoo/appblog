@@ -15,11 +15,19 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(author_id: params[:user_id], title: params[:title], text: params[:text])
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new(post_params)
+
     if @post.save
       redirect_to user_posts_path
     else
       render :new
     end
+  end
+
+  private
+
+  def post_params
+    params.permit(:title, :text)
   end
 end
