@@ -1,4 +1,8 @@
-<%= render "layouts/add-post-btn" %>
+<div class="add-btn-container">
+    <%= link_to new_user_post_path(@user) do %>
+        <%= render "layouts/add-post-btn" %>
+    <% end %>
+</div>
 <%= render "layouts/info-user" %>
 <div class="wrapper">
     <% @posts.each do |post| %>
