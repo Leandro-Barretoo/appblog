@@ -22,7 +22,7 @@ class PostsController < ApplicationController
       flash[:success] = 'Post created successfully'
       redirect_to user_posts_path
     else
-      flash.now[:alert] = "Something went wrong"
+      flash.now[:alert] = 'Something went wrong'
       render :new
     end
   end
