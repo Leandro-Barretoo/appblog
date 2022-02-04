@@ -1,14 +1,10 @@
 class PostsController < ApplicationController
   def index
-    # @user = User.find_by_id(params[:user_id])
-    # @posts = Post.all.where('author_id = ?', params[:user_id]).order(created_at: :desc)
     @user = User.includes(:posts).find(params[:user_id])
     @posts = @user.posts.includes(:comments).order(created_at: :desc)
   end
 
   def show
-    # @post = Post.find_by_id(params[:id])
-    # @user = User.find_by_id(params[:user_id])
     @user = User.find(params[:user_id])
     @post = @user.posts.includes(:comments).find(params[:id])
   end
@@ -26,7 +22,7 @@ class PostsController < ApplicationController
       flash[:success] = 'Post created successfully'
       redirect_to user_posts_path
     else
-      flash.now[:error] = 'Something went wrong'
+      flash.now[:alert] = "Something went wrong"
       render :new
     end
   end

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Like, type: :model do
   describe 'validate likes' do
-    subject { Like.new(author_id: 1, post_id: 2)}
+    subject { Like.new(author_id: 1, post_id: 2) }
     before { subject.save }
 
     it 'author_id is integer' do

@@ -14,10 +14,11 @@ RSpec.describe 'Posts', type: :request do
   end
 
   describe 'posts show action' do
-    before(:example) {
-      @post  = Post.new(author_id: User.first.id, title: 'Hello', text: 'Hello world!', commentsCounter: 0, likesCounter: 0)
+    before(:example) do
+      @post = Post.new(author_id: User.first.id, title: 'Hello', text: 'Hello world!', commentsCounter: 0,
+                       likesCounter: 0)
       @post.save
-    }
+    end
     before(:example) { get user_post_path(User.first.id, id: Post.first.id) }
 
     it 'return a successful response' do

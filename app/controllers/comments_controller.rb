@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
       flash[:success] = 'Comment created successfully'
       redirect_to user_post_path(params[:user_id], params[:post_id])
     else
-      flash.now[:error] = 'Something went wrong'
+      flash.now[:alert] = 'Something went wrong'
       render :new
     end
   end

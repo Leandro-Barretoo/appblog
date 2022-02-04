@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   describe 'validates comments' do
-    subject { Comment.new(text: 'Comment text', author_id: 1, post_id:2) }
+    subject { Comment.new(text: 'Comment text', author_id: 1, post_id: 2) }
 
     before { subject.save }
 
