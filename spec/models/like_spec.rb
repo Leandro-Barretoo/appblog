@@ -25,4 +25,19 @@ RSpec.describe Like, type: :model do
       expect(subject).to_not be_valid
     end
   end
+
+  describe 'updates counter' do
+    subject do
+      user = User.new(name: 'Leo', photo: 'https://someimage.jpeg', bio: 'I am a tester', postCounter: 0)
+      user.posts.new(title: 'test', text: 'This is a test for rspec', commentsCounter: 0, likesCounter: 0)
+    end
+
+    before { subject.save }
+
+    it 'should update comments counter' do
+      subject.likes.new
+      subject.likes[0].like_updater(subject.likes.length)
+      expect(subject.likesCounter).to eq(1)
+    end
+  end
 end
