@@ -6,6 +6,11 @@ class LikesController < ApplicationController
     @like = @post.likes.new
     @like.author_id = params[:user_id]
 
-    redirect_to user_post_path(params[:user_id], params[:post_id]) if @like.save
+    if @like.save
+      flash[:success] = 'Like saved successfully'
+      redirect_to user_post_path(params[:user_id], params[:post_id])
+    else
+      flash.now[:error] = 'Something went wrong'
+    end
   end
 end

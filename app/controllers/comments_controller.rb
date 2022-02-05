@@ -9,8 +9,10 @@ class CommentsController < ApplicationController
     @comment.author_id = params[:user_id]
 
     if @comment.save
+      flash[:success] = 'Comment created successfully'
       redirect_to user_post_path(params[:user_id], params[:post_id])
     else
+      flash.now[:alert] = 'Something went wrong'
       render :new
     end
   end
