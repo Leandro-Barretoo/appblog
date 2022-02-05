@@ -49,7 +49,7 @@ RSpec.describe Post, type: :model do
       subject.comments.new(text: 'Great test!3')
       subject.comments.new(text: 'Great test!4')
       subject.comments.new(text: 'Great test!5')
-      
+
       expect(subject.last_five.length).to eq(5)
     end
   end
