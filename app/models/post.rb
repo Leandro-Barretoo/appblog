@@ -12,6 +12,6 @@ class Post < ApplicationRecord
   end
 
   def last_five(value = 5)
-    comments.order('created_at Desc').includes(:author).last(value)
+    comments.last(value)
   end
 end
