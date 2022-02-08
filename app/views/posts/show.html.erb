@@ -1,4 +1,5 @@
 <div class="add-btn-container">
+    <%= render 'layouts/log-out-btn' %>
     <%= link_to new_user_post_path(user_id = @user.id) do %>
         <%= render "layouts/add-post-btn" %>
     <% end %>

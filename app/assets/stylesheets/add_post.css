@@ -14,10 +14,15 @@
   background-color: lightgreen;
   border-radius: 20px;
   box-shadow: 0 0 5px 2px grey;
+  margin-left: 20px;
+}
+
+.add-post-btn i {
+  margin-right: 5px;
 }
 
 .btn-txt {
-  margin-left: 5px;
+  
 }
 
 .form-wrapper {
