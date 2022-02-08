@@ -1,0 +1,14 @@
+.login-container {
+ width: 80%;
+ padding: 30px;
+ margin: 70px auto;
+ height: 70vh;
+ border-radius: 20px;
+ box-shadow: 0 0 5px 2px grey;
+ background-color: #fff;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
