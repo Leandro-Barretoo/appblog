@@ -1,36 +1,36 @@
 .login-container {
- width: 80%;
- padding: 30px;
- margin: 15em auto;
- border-radius: 20px;
- box-shadow: 0 0 5px 2px grey;
- background-color: #fff;
+  width: 80%;
+  padding: 30px;
+  margin: 15em auto;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px grey;
+  background-color: #fff;
 }
 
 .h2-title {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .field {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .field input {
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 5px 2px grey;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px 2px grey;
 }
 
 .actions {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .actions input {
-    border: none;
-    padding: 10px;
-    background-color: lightgreen;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 2px grey;
+  border: none;
+  padding: 10px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px grey;
 }
