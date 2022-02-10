@@ -22,3 +22,12 @@ body {
   background-color: lightcyan;
   box-sizing: border-box;
 }
+
+.log-out-btn {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  background-color: #ffafb5;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px grey;
+}

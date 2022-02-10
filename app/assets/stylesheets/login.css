@@ -1,0 +1,82 @@
+.login-container {
+  width: 80%;
+  padding: 30px;
+  margin: 8em auto;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px grey;
+  background-color: #fff;
+  text-align: center;
+}
+
+.h2-title {
+  font-size: 25px;
+}
+
+.field {
+  margin-top: 20px;
+}
+
+.field input,
+textarea {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px 2px grey;
+}
+
+.u-field input {
+  width: 80%;
+}
+
+.u-field textarea {
+  resize: none;
+  width: 80%;
+}
+
+.actions {
+  margin: 40px 0;
+}
+
+.actions input {
+  border: none;
+  padding: 10px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px grey;
+  width: 50%;
+}
+
+#error_explanation {
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
+
+#error_explanation ul {
+  list-style: none;
+}
+
+#alert,
+.alert {
+  padding: 15px 35px;
+  font-size: 18px;
+  background-color: crimson;
+  color: #fff;
+  font-weight: 600;
+  width: max-content;
+  margin: 28px auto;
+  border-radius: 20px;
+}
+
+.notice,
+.success {
+  padding: 15px 35px;
+  font-size: 18px;
+  background-color: darkcyan;
+  color: #fff;
+  font-weight: 600;
+  width: max-content;
+  margin: 28px auto;
+  border-radius: 20px;
+}
