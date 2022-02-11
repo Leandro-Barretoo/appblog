@@ -2,7 +2,11 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'posts index action' do
-    before { get '/users/1/posts' }
+    before(:each) do
+      @user = User.create! name: 'Doe', email: 'doe@gmail.com', password: '1233456', confirmed_at: Time.now
+      sign_in(@user)
+      get user_posts_path(@user)
+    end
 
     it 'return a successful response' do
       expect(response).to have_http_status(200)
@@ -14,12 +18,12 @@ RSpec.describe 'Posts', type: :request do
   end
 
   describe 'posts show action' do
-    before(:example) do
-      @post = Post.new(author_id: User.first.id, title: 'Hello', text: 'Hello world!', commentsCounter: 0,
-                       likesCounter: 0)
-      @post.save
+    before(:each) do
+      @user = User.create! name: 'Doe', email: 'doe@gmail.com', password: '1233456', confirmed_at: Time.now
+      @post = @user.posts.create! title: 'Loren1', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      sign_in(@user)
+      get user_post_path(@user, @post)
     end
-    before(:example) { get user_post_path(User.first.id, id: Post.first.id) }
 
     it 'return a successful response' do
       expect(response).to have_http_status(200)
