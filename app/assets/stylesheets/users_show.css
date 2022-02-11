@@ -57,6 +57,11 @@
   background-color: #eaeaea;
 }
 
+.posts a {
+  text-decoration: none;
+  color: black;
+}
+
 .post {
   background-color: #fff;
   margin: 30px;
