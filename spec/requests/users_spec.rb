@@ -18,7 +18,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'users show action' do
-    before(:example) { get user_path(User.first.id) }
+    before { get '/users/1' }
     it 'return a successful response for users#show' do
       expect(response).to have_http_status(200)
     end

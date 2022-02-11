@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'posts index action' do
-    before(:example) { get user_posts_path(user_id: User.first.id) }
+    before { get '/users/1/posts' }
 
     it 'return a successful response' do
       expect(response).to have_http_status(200)

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe 'validate user' do
-    subject { User.new(name: 'Leo', photo: 'https://someimag.jpeg', bio: 'I am a tester', postCounter: 0) }
+    subject { User.new(name: 'Leo', photo: 'https://someimag.jpeg', bio: 'I am a tester', email: 'leandro@gmail.com', password: '123456') }
     before { subject.save }
 
     it 'name should exist' do
