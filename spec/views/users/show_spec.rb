@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'User show page', type: :feature do
   before(:each) do
-    @user = User.create!(name: 'Doe', photo: 'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg', bio: 'Full-Stack Web Dev',
+    @user = User.create!(name: 'Doe',
+                         photo: 'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg',
+                         bio: 'Full-Stack Web Dev',
                          email: 'doe@gmail.com', password: '1234567', confirmed_at: Time.now)
     user = User.last
     user.posts.create! title: 'Loren1', text: 'Lorem Ipsum ament'

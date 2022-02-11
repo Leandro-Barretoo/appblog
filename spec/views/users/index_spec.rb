@@ -2,9 +2,13 @@ require 'rails_helper'
 
 RSpec.describe 'User index page', type: :feature do
   before(:each) do
-    User.create!(name: 'Hdez', photo: 'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg', bio: 'Full-Stack Web Dev',
+    User.create!(name: 'Hdez',
+                 photo: 'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg',
+                 bio: 'Full-Stack Web Dev',
                  email: 'hdez@gmail.com', password: '1234567', confirmed_at: Time.now)
-    User.create!(name: 'Doe', photo: 'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg', bio: 'Sofware Engineer',
+    User.create!(name: 'Doe',
+                 photo: 'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg',
+                 bio: 'Sofware Engineer',
                  email: 'doe@gmail.com', password: '1234567', confirmed_at: Time.now)
     subject = User.first
     subject.posts.create! title: 'Lord', text: 'The lord of the ring'
@@ -17,7 +21,7 @@ RSpec.describe 'User index page', type: :feature do
   end
 
   it "I can see the user's profile picture." do
-    expect(page).to have_css(".image", count: 2)
+    expect(page).to have_css('.image', count: 2)
   end
 
   it "I can see the user's username." do
